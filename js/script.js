@@ -179,19 +179,23 @@ gameLoop()
 
 document.addEventListener("keydown", ({ key }) => {
 
-    if (key == "d" && direction !== "left") {
+    //Direção direita (right)
+    if (key == "d" && direction != "left") {
         direction = "right"
     }
 
-    if (key == "a" && direction !== "right") {
+    //Direção esquerda (left)
+    if (key == "a" && direction != "right") {
         direction = "left"
     }
 
-    if (key == "s" && direction !== "up") {
+    //Direção baixo (down)
+    if (key == "s" && direction != "up") {
         direction = "down"
     }
 
-    if (key == "w" && direction !== "down") {
+    //Direção cima (up)
+    if (key == "w" && direction != "down") {
         direction = "up"
     }
 })
